@@ -31,5 +31,7 @@
     pyvex = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pyvex {
       archinfo = archinfo;
     };
+
+    PySMT = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pysmt {};
   };
 }
