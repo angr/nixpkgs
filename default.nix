@@ -14,7 +14,11 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  python3Packages = {
+  python3Packages = rec {
     archinfo = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/archinfo {};
+
+    pyvex = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pyvex {
+      archinfo = archinfo;
+    };
   };
 }
