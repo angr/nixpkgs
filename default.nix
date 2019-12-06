@@ -21,6 +21,11 @@
 
     archinfo = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/archinfo {};
 
+    cle = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/cle {
+      archinfo = archinfo;
+      pyvex = pyvex;
+    };
+
     mulpyplexer = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/mulpyplexer {};
 
     pyvex = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pyvex {
