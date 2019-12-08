@@ -21,6 +21,11 @@
 
     archinfo = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/archinfo {};
 
+    claripy = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/claripy {
+      PySMT = PySMT;
+      z3-solver = z3-solver;
+    };
+
     cle = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/cle {
       archinfo = archinfo;
       pyvex = pyvex;
