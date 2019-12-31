@@ -31,6 +31,8 @@
       pyvex = pyvex;
     };
 
+    cooldict = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/cooldict {};
+
     mulpyplexer = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/mulpyplexer {};
 
     pyvex = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pyvex {
