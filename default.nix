@@ -33,6 +33,8 @@
 
     mulpyplexer = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/mulpyplexer {};
 
+    pyxbe = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pyxbe {};
+
     pyvex = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pyvex { inherit archinfo; };
 
     PySMT = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pysmt {};
