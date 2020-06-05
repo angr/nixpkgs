@@ -41,6 +41,8 @@
 
     PySMT = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/pysmt {};
 
+    unicorn = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/unicorn {};
+
     # TODO: Remove once NixOS/nixpkgs#75125 is resolved: This is here for `claripy` to work.
     z3-solver = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/z3-solver {};
   };
