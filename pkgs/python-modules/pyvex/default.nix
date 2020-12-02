@@ -19,13 +19,6 @@ buildPythonPackage rec {
 
   propagatedBuildInputs = [ archinfo bitstring cffi future setuptools ];
 
-  # Version 9.0.4446 of `archinfo` is broken: see angr/archinfo#94 ;
-  # Allow the use of the unstable version present in the repo;
-  # Could probably be removed on the next release of `angr` (and its dependencies).
-  patchPhase = ''
-    sed -i "s/archinfo==${version}/archinfo/" setup.py
-  '';
-
   setupPyBuildFlags = [
     "--plat-name x86_64-linux"
   ];
