@@ -27,8 +27,6 @@
 
     cle = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/cle { inherit archinfo minidump pyvex pyxbe; };
 
-    cooldict = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/cooldict {};
-
     minidump = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/minidump {};
 
     mulpyplexer = pkgs.python3.pkgs.callPackage ./pkgs/python-modules/mulpyplexer {};
