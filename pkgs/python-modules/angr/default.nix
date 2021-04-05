@@ -27,7 +27,7 @@
 
 buildPythonPackage rec {
   pname = "angr";
-  version = "9.0.5405";
+  version = "9.0.6588";
   disabled = !isPy3k;
 
   propagatedBuildInputs = [
@@ -58,7 +58,7 @@ buildPythonPackage rec {
     owner = "angr";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-ZsIP4MBDGHurLh+BkZG+x6WLvkYpshZQEmzL/G4id28=";
+    sha256 = "sha256-0Z9i1Glu00NPlN3kJ0HEnp9kUwywV4SXFjGKjUJwBVg=";
   };
 
   setupPyBuildFlags = [
